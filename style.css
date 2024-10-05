@@ -1,0 +1,356 @@
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+@font-face {
+    font-family: 'Uindbase Font 1';
+    src: url('/fonts/uindbase_font_1.eot');
+    src: url('/fonts/uindbase_font_1.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/uindbase_font_1.woff2') format('woff2'),
+    url('/fonts/uindbase_font_1.woff') format('woff'),
+    url('/fonts/uindbase_font_1.ttf') format('truetype'),
+    url('/fonts/uindbase_font_1.svg#uindbase_font_1') format('svg');
+}
+
+@font-face {
+    font-family: 'Usually-font';
+    src: url('/fonts/usually-font_bold.eot');
+    src: url('/fonts/usually-font_bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/usually-font_bold.woff2') format('woff2'),
+    url('/fonts/usually-font_bold.woff') format('woff'),
+    url('/fonts/usually-font_bold.ttf') format('truetype'),
+    url('/fonts/usually-font_bold.svg#usually-font_bold') format('svg');
+}
+
+body {
+    background: linear-gradient(#0E141C, #0A0F14);
+    color: white;
+}
+
+.nav ul {
+    margin-top: 15px;
+    margin-left: 30px;
+    display: flex;
+    gap: 50px;
+}
+
+.gender ul {
+    margin-left: 180px;
+    margin-top: 10px;
+    display: flex;
+    font-size: 15px;
+    gap: 50px;
+}
+
+.header__body {
+    display: flex;
+    font-family: "Uindbase Font 1", serif;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    margin: 0 180px;
+}
+
+header nav {
+    font-size: 20px;
+    font-family: "Uindbase Font 1", serif;
+}
+
+.logo-and-nav {
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__main {
+    color: yellow;
+}
+
+.header__logo img {
+    object-fit: cover;
+    display: flex;
+    height: 100%;
+}
+
+.header__logo {
+    height: 50px;
+    width: 150px;
+}
+
+.clothes-for-all {
+    margin: 150px 0;
+    font-family: 'Usually-font', serif;
+    font-size: 120px;
+    text-align: center;
+    text-shadow: 50px 50px 0 #1F252D;
+}
+
+.clothes__catalog {
+    margin-top: 150px;
+    margin-left:max(800px, 200px);
+    font-family: "Uindbase Font 1", serif;
+    width: min-content;
+    height: 50px;
+    color: yellow;
+    border-radius: 30px;
+    padding: 16px 25px;
+    font-size: 18px;
+    border: yellow 1px solid;
+    text-shadow: none;
+    justify-content: right;
+}
+
+.for-this-season h1 {
+    margin: 30px 0 50px;
+    font-family: "Usually-font", serif;
+    font-size: 100px;
+    text-shadow: -50px 15px #1F252D;
+}
+
+.for-this-season-picture {
+    max-width: 1200px;
+}
+
+.for-this-season__h1 {
+    display: flex;
+    justify-content: right;
+}
+
+.for-this-season__trend-item {
+    max-height: 460px;
+    max-width: 270px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #10171F;
+    font-family: "Uindbase Font 1", serif;
+    font-size: 20px;
+}
+
+.for-this-season__trend-item img {
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.for-this-season__trend-item .texts {
+    padding: 15px;
+}
+
+.for-this-season__trend-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.contacts__header {
+    font-family: "Uindbase Font 1", serif;
+    font-size: 100px;
+    text-shadow: 50px 15px #1F252D;
+    margin-bottom: 20px;
+}
+
+.contacts__body {
+    display: flex;
+}
+
+.contacts__info {
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Uindbase Font 1", serif;
+    font-size: 40px;
+}
+
+.contacts {
+    margin-bottom: 200px;
+}
+
+.contacts__footer {
+    margin: 100px 0;
+    font: normal 20px "Uindbase Font 1", serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        margin: 60px 0;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+    .gender ul {
+        margin-left: 0;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .header__body {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .clothes-for-all {
+        font-size: 80px;
+    }
+
+    .clothes__catalog {
+        width: max-content;
+        margin-left: max(800px, 200px);
+        margin-top: 100px;
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .for-this-season h1 {
+        font-size: 70px;
+    }
+
+    .for-this-season__trend-list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        gap: 50px;
+    }
+
+    .for-this-season__trend-item {
+        margin-bottom: 20px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .contacts__header {
+        font-size: 80px;
+    }
+
+    .contacts__info {
+        font-size: 30px;
+    }
+
+    .contacts__footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .clothes-for-all {
+        font-size: 60px;
+    }
+
+    .clothes__catalog {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .for-this-season h1 {
+        font-size: 50px;
+    }
+
+    .contacts__header {
+        font-size: 60px;
+    }
+
+    .contacts__info {
+        font-size: 24px;
+    }
+}
+@media(max-width: 1200px) {
+    .for-this-season h1 {
+        font-size: 50px;
+    }
+}
+
+
+
